@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+
+body {
+  background: linear-gradient(to right, red, blue);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: whitesmoke;
+  text-shadow: 3px 3px 2px black, 4px 4px 3px grey;
+  font-size: larger;
+}
+
+.surveyitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 12px;
+}
+
+input {
+  border-radius: 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: large;
+  margin-top: 6px;
+}
+select,
+textarea {
+  margin-top: 9px;
+}
+
+textarea {
+  height: 70px;
+  width: 450px;
+}
+.inputtxt {
+  height: 30px;
+  width: 450px;
+}
+label,
+p {
+  padding-bottom: 4px;
+  font-size: 22px;
+}
+#submit {
+  border: 2px solid violet;
+  background: white;
+  color: green;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  padding: 6px 14px;
+  margin-top: 20px;
+}
+
+#intro {
+  text-align: center;
+}
+
+#title {
+  font-size: 50px;
+  background: linear-gradient(to right, green, pink);
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px black;
+}
+#description {
+  font-size: 35px;
+}
+
+#survey {
+  background: linear-gradient(to bottom, blue, red, pink);
+  margin: 0 auto;
+  text-align: center;
+  width: 850px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 10px white;
+}
+/*
+@media and all 
+*/
+@media (max-width: 500px) {
+  #survey {
+    width: 350px;
+    font-size: 8px !important;
+  }
+  #title {
+    font-size: 50px;
+  }
+  .inputtxt {
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 50px;
+    width: 250px;
+  }
+
+  #submit {
+    font-size: 19px !important;
+  }
+}

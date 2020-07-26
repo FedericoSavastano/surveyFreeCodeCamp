@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="survey">
+  <section id="intro">
+    <h1 id="title"> Survey </h1>
+    <p id="description"> this is a demo survey <p>
+  <section>
+    
+  <section id="formsection">
+    <form id="survey-form">
+      <div class="surveyitem">
+        <label id="name-label"> Name: </label>
+        <input id="name" type="text" required placeholder="Your name here" name="name" class="inputtxt"> </input>
+      <div>
+        
+      <div class="surveyitem">
+        <label id="email-label"> Email: </label>
+        <input id="email" type="email" required placeholder="Your age here" name="email" class="inputtxt"> </input>
+      <div>
+        
+      <div class="surveyitem">
+        <label id="number-label"> Age: </label>
+        <input id="number" type="number" required name="age"  min="18" max="99" placeholder="Your age here" name="age" class="inputtxt"> </input>
+      <div>
+        
+      <div class="surveyitem">
+        <label> If you had to choose one option from this dropdown, which one would you like? </label>
+        <select id="dropdown" name="selector" required>  
+          <option disabled selected value>choose one</option> <option value="op1"> Option 1 </option> <option value="op2"> Option 2 </option> <option value="op3"> Option 3 </option> <option value="op4"> Option 4 </option> 
+        </select>
+      <div>
+        
+      <div class="surveyitem">
+         <p>If you had to choose one of these radio buttons, which would you like?</p>
+      <label>
+        <input
+          name="radio"
+          value="r1"
+          type="radio"
+           
+          checked
+        />Radio 1</label
+      >
+      <label>
+        <input
+          name="radio"
+          value="r2"
+          type="radio"
+          
+        />Radio 2</label
+      >
+
+      <label
+        ><input
+          name="radio"
+          value="r3"
+          type="radio"
+           
+        />Radio 3</label
+      >
+            
+       </div>
+             
+       <div class="surveyitem">
+         <label>Please leave us a comment</label>
+          <textarea  placeholder="Enter your comment here..." name="comment"> </textarea>
+       </div>
+        
+        <div class="surveyitem">
+          <p> If you like, you can check a couple of these. If you like</p>
+          <label>Choose check
+          <input type="checkbox" value="ch1"> </input></label>  
+          <label>Choose check  
+          <input type="checkbox" value="ch2"> </input></label>
+          <label>Choose check
+          <input type="checkbox" value="ch3"> </input></label>  
+        </div>
+        
+        <div class="surveyitem">
+          <button id="submit" type="submit"> Send </button>
+        </div>
+    </form>
+  <section><!-- #formsection -->
+</div> <!-- #survey -->
+        
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
